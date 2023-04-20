@@ -1,3 +1,17 @@
+//* set up index.html file with mocha setup 
+//* link costs.test.js and courseCost.js in script tags
+//*  write a describe statement for the name of the function
+//* write a describe statement  for the what the function does 
+//* create asset deepEqual statement to compare the equality of the expected outcome as well as the output from the function
+//* create assert deepEqual statements for when the 40% discount is applied 
+//* create assert deepEqual statement for when the 20% discount is applied
+//* create assert deepEqual statement for when the date is invalid
+//* create assert deepEqual statement for when the couse code is invalid  
+//* create assert deepEqual statement for when there is not discount on a valid date 
+
+
+
+
 describe('courseCost function', function () {
     describe('This function calculate the cost 3 different courses and applies discounts if applicable.', function () {
         it('returns the cost of the Python course when its the 23rd day of the month and 40% discount is applicaple', function () {
