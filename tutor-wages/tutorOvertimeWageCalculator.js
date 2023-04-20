@@ -7,13 +7,31 @@
 //* retrun the overtime wage
 //*
 
-function tutorOvertimeWageCalculator(overtimesheet) {
+function tutorOvertimeWageCalculator(overtimesheet, level) {
     var hour_worked = overtimesheet.split('-');
     var sumHours = 0
-    for (var i = 0; i < hour_worked.length; i++) {
-        sumHours += parseFloat(hour_worked)
+    var overtimeWage = 0
+    for (let i = 0; i < hour_worked.length; i++) {
+        sumHours  +=  parseFloat(hour_worked[i])
     }
-if 
-return sumHours
+ var excessHours = sumHours - 40
+ console.log(sumHours);
+ var addPerc = 0
+ if (level === 1){
+percentageCalc = (excessHours) * 0.07 
+addPerc = percentageCalc + (excessHours)
+wage = addPerc * 75
+ }
+ if (level === 2){
+    percentageCalc = (excessHours) * 0.09
+    addPerc = percentageCalc + (excessHours)
+    wage = addPerc *90
+ }
+ if (level === 3){
+    percentageCalc = (excessHours) * 0.12 
+    addPerc = percentageCalc + (excessHours)
+    wage = addPerc *105
+ }
+ return wage
 }
-console.log(tutorOvertimeWageCalculator("8-8-8-8-8-9-5"))
+console.log(tutorOvertimeWageCalculator("8-8-8-8-8-9-5", 1))
