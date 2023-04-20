@@ -56,3 +56,5 @@ function courseCost(courseCode, startDateStr){
 	    amountDue : courseCost
     }
 }
+const cost = courseCost('p1', '2023-04-01')
+console.log(cost);
