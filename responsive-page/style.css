@@ -1,0 +1,22 @@
+.btnDetails {
+
+    border: none;
+    width: 32px;
+    height: 32px;
+    background-color: #eee;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.btnDetails:hover {
+    border: 1px solid #fa9a9a;
+    background-color: #ddd;
+}
+
+@media(min-width: 960px){
+    .card-deck {
+
+        flex-direction: row!important;
+
+    }
+}
